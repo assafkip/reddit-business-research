@@ -1,0 +1,16 @@
+{
+  "name": "reddit-business-research",
+  "version": "1.0.0",
+  "description": "Research what Reddit says about your business, competitors, and industry. Searches posts, analyzes sentiment, and generates actionable reports.",
+  "author": {
+    "name": "4 Points Consulting"
+  },
+  "license": "MIT",
+  "keywords": ["reddit", "market-research", "business-intelligence", "sentiment-analysis", "competitor-analysis"],
+  "mcpServers": {
+    "reddit": {
+      "command": "uvx",
+      "args": ["reddit-no-auth-mcp-server"]
+    }
+  }
+}
