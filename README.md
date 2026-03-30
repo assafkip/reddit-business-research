@@ -2,9 +2,11 @@
 
 **Find out what Reddit really thinks about your business, your competitors, and your market.**
 
-This is a plugin for [Claude Code](https://claude.ai/claude-code) -- Anthropic's AI coding tool. It connects to Reddit's public data and runs a structured research workflow that finds relevant conversations, analyzes what people are saying, and delivers a report you can actually use.
+This is a **plugin for [Claude Code](https://claude.ai/claude-code)** -- Anthropic's AI coding tool. It connects to Reddit's public data and runs a structured research workflow that finds relevant conversations, analyzes what people are saying, and delivers a report you can actually use.
 
 No API keys. No setup headaches. Just install and go.
+
+> **This is a Claude Code plugin, not a web app.** It doesn't have a UI, a server, or a preview screen. It works by adding new capabilities to Claude inside your conversations. You install it once, then use it by typing a command in chat.
 
 ---
 
@@ -42,12 +44,21 @@ The whole thing takes a few minutes depending on how much is out there.
 ### What you need first
 
 1. **Claude Code** -- [Install here](https://claude.ai/claude-code) if you don't have it
-2. **uv** (Python package runner) -- [Install here](https://docs.astral.sh/uv/getting-started/installation/) if you don't have it. One command:
+2. **uv** (Python package runner) -- [Install here](https://docs.astral.sh/uv/getting-started/installation/) if you don't have it:
+
+   **Mac / Linux:**
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
+   **Windows (PowerShell):**
+   ```powershell
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+
 ### Install the plugin
+
+In the Claude Code **terminal** (not the chat), run:
 
 ```bash
 claude /plugin install github:4-points-consulting/reddit-business-research
@@ -55,11 +66,13 @@ claude /plugin install github:4-points-consulting/reddit-business-research
 
 That's it. The Reddit connection is bundled -- no API keys, no extra config.
 
+> **Using the Claude Code Desktop app?** Open the Terminal tab at the bottom of the screen and run the install command there. Do NOT use the "Preview" button -- this plugin has nothing to preview.
+
 ---
 
 ## Run it
 
-Open Claude Code in any project folder and type:
+Open Claude Code in any project folder and type **in the chat**:
 
 ```
 /reddit-business-research:reddit-research
